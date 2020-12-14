@@ -204,5 +204,5 @@ ChatBotPanelDialogItem::ChatBotPanelDialogItem(wxPanel *parent, wxString text, b
     _chatBotTxt->Wrap(150);
 
     // set background color
-    this->SetBackgroundColour((isFromUser == true ? wxT("TAN") : wxT("DIM GREY")));
+    this->SetBackgroundColour((isFromUser == true ? wxT("LIGHT GREY") : wxT("DIM GREY")));
 }
