@@ -1,6 +1,6 @@
 
 // define all graph nodes
-<TYPE:NODE><ID:0><ANSWER:Welcome! My name is Curiosity. You can ask me about things related to memory management in C++. Possible topics are 'pointers' and 'the C++ memory model'. What would you like to talk about?>
+<TYPE:NODE><ID:0><ANSWER:Welcome! My name is Curiosity. You can ask me about things related to C++. Possible topics are 'pointers', 'the C++ memory model', 'flow control'. What would you like to talk about?>
 
 <TYPE:NODE><ID:1><ANSWER:Great! Let's talk about pointers. In computer science, a pointer is a special value whose meaning is a memory address. This address can contain either data, such as variables or objects, but also program codes (instructions). By dereferencing the pointer it is possible to access the data or the code. Among other things, pointers are used to manage dynamic memory. Other topics around pointers you can ask about are 'smart pointers' and 'nullptr'>
 
@@ -16,10 +16,49 @@
 
 <TYPE:NODE><ID:7><ANSWER:Static memory persists throughout the entire life of the program, and is usually used to store things like global variables, or variables created with the static clause. -- There are no more topics in this section, starting over!>
 
+<TYPE:NODE><ID:8><ANSWER:In C++, control flow statements are used to alter, redirect, or control the flow of the program execution based on the application logic. Other topics around flow control you can ask about are 'iteration statements', 'selection statements' and 'jump statements'.>
+
+<TYPE:NODE><ID:9><ANSWER:There are cases where we want a block of code to be executed when some condition is satisfied. Decision making statement evaluates single or multiple test expressions which results is 'TRUE' of 'FALSE'. In C++, we have following decision making statements: 'if else statements', 'switch case'. What would you like to know about?>
+
+<TYPE:NODE><ID:10><ANSWER:Loop statements are used to execute the block of code repeatedly for a specified number of times of until it meets a specified condition. They are very useful to iterate over list of items or perform a task for multiple times. In C++, we have following loop statements: 'for loop', 'while loop', 'do while loop'. Which one do you choose?>
+
+<TYPE:NODE><ID:11><ANSWER:In C++, you have loop control statements that can be used to alter or control the flow of loop execution based on specified conditions. We have following loop control statements: 'break statement', 'continue statement'. Which one do you choose?>
+
+<TYPE:NODE><ID:12><ANSWER:When we want to execute a block of code when if condition is true and another block of code when if condition is false, we use if...else statements. 'If condition' is a boolean expression that results in either True or False.>
+
+<TYPE:NODE><ID:13><ANSWER:In C++, switch case statement helps to avoid long chains of if...else statements. A swithc case evaluates an expression against multiple cases in order to identify the block of code to be executed.>
+
+<TYPE:NODE><ID:14><ANSWER:The for loop is used when we want to execute block of code known times. The loop takes a variable as iterator and assign it with an initial value, and iterate through the loop body as long as the test condition is true.>
+
+<TYPE:NODE><ID:15><ANSWER:The while loop will execute a block of code as long as a test expression is true. This loop is useful when the number of iterations can not be predicted beforehand.>
+
+<TYPE:NODE><ID:16><ANSWER:The 'do...while' loop executes block of code inside loop body first and then tests the condition for next iteration and executes next only if contition is true. Unlike the 'while' loop, even if the condition is not satisfied, in do...while loop, block of code inside loop body executes at least once.>
+
+<TYPE:NODE><ID:17><ANSWER:Break statement inside any loop gives you way to break or terminate the execution of loop containing it, and transfers the execution to the next statement following the loop.>
+
+<TYPE:NODE><ID:18><ANSWER:The Continue statement gives you way to skip over the current iteration of any loop. It does not terminate the loop, but continues with the next iteration. >
 
 // connect nodes with edges
 <TYPE:EDGE><ID:0><PARENT:0><CHILD:1><KEYWORD:pointer><KEYWORD:smart pointer>
 <TYPE:EDGE><ID:1><PARENT:0><CHILD:2><KEYWORD:memory model><KEYWORD:heap><KEYWORD:stack>
+
+<TYPE:EDGE><ID:8><PARENT:0><CHILD:8><KEYWORD:flow><KEYWORD:flow control>
+
+
+<TYPE:EDGE><ID:9><PARENT:8><CHILD:9><KEYWORD:selection statements><KEYWORD:selection>
+<TYPE:EDGE><ID:10><PARENT:8><CHILD:10><KEYWORD:iteration statements><KEYWORD:iteration>
+<TYPE:EDGE><ID:11><PARENT:8><CHILD:11><KEYWORD:jump statements><KEYWORD:jump>
+
+<TYPE:EDGE><ID:12><PARENT:9><CHILD:12><KEYWORD:if else statements><KEYWORD:if else>
+<TYPE:EDGE><ID:13><PARENT:9><CHILD:13><KEYWORD:switch case statement><KEYWORD:switch case>
+
+<TYPE:EDGE><ID:12><PARENT:10><CHILD:14><KEYWORD:for loop><KEYWORD:for>
+<TYPE:EDGE><ID:13><PARENT:10><CHILD:15><KEYWORD:while><KEYWORD:while loop>
+<TYPE:EDGE><ID:13><PARENT:10><CHILD:16><KEYWORD:do><KEYWORD:do while>
+
+<TYPE:EDGE><ID:12><PARENT:11><CHILD:17><KEYWORD:break statement><KEYWORD:break>
+<TYPE:EDGE><ID:13><PARENT:11><CHILD:18><KEYWORD:continue><KEYWORD:continue statement>
+
 
 <TYPE:EDGE><ID:2><PARENT:1><CHILD:3><KEYWORD:unique pointer><KEYWORD:shared pointer><KEYWORD:weak pointer>
 <TYPE:EDGE><ID:3><PARENT:1><CHILD:4><KEYWORD:NULL><KEYWORD:null pointer><KEYWORD:nullptr>
