@@ -42,7 +42,7 @@ sudo checkinstall
 ```
 
 ## Get started
-```
+```shell
 git clone https://github.com/Agnieszka1994/Memory-Management-Chatbot
 cd Memory-Management-Chatbot/
 mkdir build && cd build/
@@ -53,5 +53,5 @@ make
 
 ## Sample usage
 
-[![img]()]()
+[![img](https://github.com/Agnieszka1994/Memory-Management-Chatbot/blob/main/images/CuriosityDemo.gif)](https://github.com/Agnieszka1994/Memory-Management-Chatbot/blob/main/images/)
 
