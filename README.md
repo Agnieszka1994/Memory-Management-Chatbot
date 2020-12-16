@@ -20,7 +20,7 @@ The program was optimized from a memory management perspective and the following
 
 ## wxWidgets for Linux
 Install from App Store:
-`sudo apt-get install libwxgtk3.0-dev libwxgtk3`
+`sudo apt-get install libwxgtk3.0-dev libwxgtk3` \
 Or follow the below steps:
 
 - download [wxWidgets](http://wxwidgets.org/)
@@ -43,12 +43,12 @@ sudo checkinstall
 
 ## Get started
 ```
-git clone https://github.com/Agnieszka1994/Linux-System-Monitor
-cd Linux-System-Monitor/
+git clone https://github.com/Agnieszka1994/Memory-Management-Chatbot
+cd Memory-Management-Chatbot/
 mkdir build && cd build/
 cmake ..
 make
-./monitor
+./membot
 ```
 
 ## Sample usage
