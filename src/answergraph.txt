@@ -1,6 +1,6 @@
 
 // define all graph nodes
-<TYPE:NODE><ID:0><ANSWER:Welcome! My name is Curiosity. You can ask me about things related to C++. Possible topics are 'pointers', 'the C++ memory model', 'flow control'. What would you like to talk about?>
+<TYPE:NODE><ID:0><ANSWER:Welcome! My name is Curiosity. You can ask me about things related to C++. Possible topics are 'pointers', 'the C++ memory model' and 'flow control'. What would you like to talk about?>
 
 <TYPE:NODE><ID:1><ANSWER:Great! Let's talk about pointers. In computer science, a pointer is a special value whose meaning is a memory address. This address can contain either data, such as variables or objects, but also program codes (instructions). By dereferencing the pointer it is possible to access the data or the code. Among other things, pointers are used to manage dynamic memory. Other topics around pointers you can ask about are 'smart pointers' and 'nullptr'>
 
@@ -18,7 +18,7 @@
 
 <TYPE:NODE><ID:8><ANSWER:In C++, control flow statements are used to alter, redirect, or control the flow of the program execution based on the application logic. Other topics around flow control you can ask about are 'iteration statements', 'selection statements' and 'jump statements'.>
 
-<TYPE:NODE><ID:9><ANSWER:There are cases where we want a block of code to be executed when some condition is satisfied. Decision making statement evaluates single or multiple test expressions which results is 'TRUE' of 'FALSE'. In C++, we have following decision making statements: 'if else statements', 'switch case'. What would you like to know about?>
+<TYPE:NODE><ID:9><ANSWER:There are cases where we want a block of code to be executed when some condition is satisfied. Decision making statement evaluates single or multiple test expressions which result in 'TRUE' or 'FALSE'. In C++, we have following decision making statements: 'if else statements', 'switch case'. What would you like to know about?>
 
 <TYPE:NODE><ID:10><ANSWER:Loop statements are used to execute the block of code repeatedly for a specified number of times of until it meets a specified condition. They are very useful to iterate over list of items or perform a task for multiple times. In C++, we have following loop statements: 'for loop', 'while loop', 'do while loop'. Which one do you choose?>
 
@@ -26,7 +26,7 @@
 
 <TYPE:NODE><ID:12><ANSWER:When we want to execute a block of code when if condition is true and another block of code when if condition is false, we use if...else statements. 'If condition' is a boolean expression that results in either True or False.>
 
-<TYPE:NODE><ID:13><ANSWER:In C++, switch case statement helps to avoid long chains of if...else statements. A swithc case evaluates an expression against multiple cases in order to identify the block of code to be executed.>
+<TYPE:NODE><ID:13><ANSWER:In C++, switch case statement helps to avoid long chains of if...else statements. A switch case evaluates an expression against multiple cases in order to identify the block of code to be executed.>
 
 <TYPE:NODE><ID:14><ANSWER:The for loop is used when we want to execute block of code known times. The loop takes a variable as iterator and assign it with an initial value, and iterate through the loop body as long as the test condition is true.>
 
